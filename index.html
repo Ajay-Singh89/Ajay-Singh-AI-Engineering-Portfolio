@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Ajay Singh — AI & Data Science undergraduate building reliable AI agents, RAG systems, and backend applications.">
+  <title>Ajay Singh | AI Engineer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ajay Singh home"><span class="brand-mark">AS</span><span>AJAY SINGH<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a>
+        <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse"></span> OPEN TO INTERNSHIP OPPORTUNITIES</div>
+        <p class="eyebrow">AI / ML · AGENTIC SYSTEMS · BACKEND</p>
+        <h1>Building useful AI.<br><span class="gradient-text">Making it reliable.</span></h1>
+        <p class="hero-intro">I'm <strong>Ajay Singh</strong>, an Artificial Intelligence & Data Science undergraduate focused on practical AI engineering—from RAG and tool-calling agents to APIs that turn ideas into usable products.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="Ajay-Singh-Resume.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i class="meta-icon">⌖</i> Pune, India</span><span><i class="meta-icon">✉</i> <a href="mailto:singh006ajay@gmail.com">singh006ajay@gmail.com</a></span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract AI network illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><span>AI</span><small>ENGINEERING</small></div>
+        <span class="node node-a">RAG</span><span class="node node-b">LLMs</span><span class="node node-c">APIs</span><span class="node node-d">AGENTS</span>
+        <div class="art-caption"><span class="caption-line"></span><span>IDEA → SYSTEM → IMPACT</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-mouse"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section section-border" id="about">
+      <div class="wrap about-grid">
+        <div><p class="eyebrow">01 / ABOUT</p><h2>Curiosity into<br><span class="muted-heading">working systems.</span></h2></div>
+        <div class="about-body"><p class="lead">I enjoy working at the intersection of language models, information retrieval, and software engineering.</p><p>My projects explore how AI can retrieve relevant context, use tools safely, and return structured, useful results. I care about the engineering around the model too: validation, authentication, APIs, and persistent data.</p><div class="principles"><div><span>01</span><strong>Grounded AI</strong><small>Retrieval before generation</small></div><div><span>02</span><strong>Secure by design</strong><small>Controlled access to tools</small></div><div><span>03</span><strong>Built to ship</strong><small>Practical APIs and workflows</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects with a purpose<span class="accent">.</span></h2></div><p class="section-note">A few systems I've built while exploring AI engineering and backend development.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-top"><span class="project-number">01</span><span class="project-kind">RAG · SEMANTIC SEARCH</span></div><div class="project-visual visual-rag"><div class="doc-stack"><span>resume.pdf</span><span>chunk_01</span><span>chunk_02</span></div><div class="flow-arrow">→</div><div class="vector-box">QDRANT<small>VECTOR STORE</small></div><div class="flow-arrow">→</div><div class="answer-box">Context-grounded<br>answers<span>✦</span></div></div><h3>Candidate Analysis Agent</h3><p>Built a RAG pipeline that parses resume PDFs, chunks content, creates semantic embeddings, and stores them in Qdrant. Retrieves relevant sections to help Google Gemini generate context-grounded answers.</p><div class="tag-list"><span>Python</span><span>LangChain</span><span>Gemini</span><span>Qdrant</span><span>Hugging Face</span></div><div class="project-footer"><span>Retrieval-augmented generation</span><span class="project-arrow">↗</span></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">02</span><span class="project-kind">SECURITY · MCP</span></div><div class="project-visual visual-security"><div class="shield">✓</div><div class="security-flow"><span>Identity</span><b>→</b><span>Permissions</span><b>→</b><span>Tools</span></div><div class="secure-label">SCOPED ACCESS ENABLED</div></div><h3>Secure Customer Support AI Agent</h3><p>Created an AI support agent that accesses customer, order, product, and refund tools through MCP, with Descope authentication and scope-based authorization for protected operations.</p><div class="tag-list"><span>LangChain</span><span>MCP</span><span>Groq</span><span>Descope</span></div><div class="project-footer"><span>Secure tool-calling workflows</span><span class="project-arrow">↗</span></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">03</span><span class="project-kind">LLM · STRUCTURED OUTPUT</span></div><div class="project-visual visual-analyzer"><div class="mini-window"><div class="window-dots">● ● ●</div><div class="score-line"><span>Match score</span><strong>JSON</strong></div><div class="score-track"><i></i></div><div class="json-lines"><span>{ "strong_skills": [...] }</span><span>{ "missing_skills": [...] }</span><span>{ "recommendations": [...] }</span></div></div></div><h3>AI Resume Analyzer</h3><p>Built a pipeline that extracts PDF resume text and compares it with a job description. Pydantic validates structured output containing a match score, strong skills, missing skills, and recommendations.</p><div class="tag-list"><span>Python</span><span>Gemini</span><span>Pydantic</span><span>PDF Processing</span></div><div class="project-footer"><span>Validated candidate insights</span><span class="project-arrow">↗</span></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">04</span><span class="project-kind">BACKEND · REST API</span></div><div class="project-visual visual-api"><div class="api-method">GET</div><div class="api-path">/api/skills</div><div class="api-status">200 OK</div><div class="api-method post">POST</div><div class="api-path">/api/skills</div><div class="api-status">201 CREATED</div></div><h3>SkillSync — Career Tracking API</h3><p>Developed a FastAPI backend with REST endpoints to add and retrieve skills, using SQLite and SQLAlchemy for persistent storage. Authentication and intelligent recommendations are ongoing improvements.</p><div class="tag-list"><span>FastAPI</span><span>SQLite</span><span>SQLAlchemy</span><span>REST</span></div><div class="project-footer"><a href="https://github.com/Ajay-Singh89/skill-sync" target="_blank" rel="noopener">View GitHub repository ↗</a><span class="project-arrow">↗</span></div></article>
+        </div>
+        <p class="project-disclaimer">Project descriptions reflect my résumé. Only the SkillSync repository is linked here; other project links can be added when their repositories are public.</p>
+      </div>
+    </section>
+
+    <section class="section section-border" id="skills">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">03 / TOOLKIT</p><h2>Tools I work with<span class="accent">.</span></h2></div><p class="section-note">A practical toolkit for building data-driven applications and AI-powered workflows.</p></div>
+        <div class="skills-layout">
+          <div class="skill-group"><span class="skill-icon">⌘</span><div><h3>Programming</h3><p>Python · SQL</p></div></div>
+          <div class="skill-group"><span class="skill-icon">◈</span><div><h3>AI / ML</h3><p>Scikit-learn · Pandas · NumPy · Matplotlib · Seaborn · EDA · Model evaluation</p></div></div>
+          <div class="skill-group"><span class="skill-icon">✳</span><div><h3>Generative AI</h3><p>LLMs · RAG · Prompt engineering · LangChain · Google Gemini · Sentence Transformers · Qdrant · MCP · Groq</p></div></div>
+          <div class="skill-group"><span class="skill-icon">⌘</span><div><h3>Backend & Data</h3><p>FastAPI · REST APIs · SQLite · SQLAlchemy · MySQL · Authentication · Authorization</p></div></div>
+          <div class="skill-group"><span class="skill-icon">☁</span><div><h3>Cloud & DevOps</h3><p>Docker · AWS CloudFormation</p></div></div>
+          <div class="skill-group"><span class="skill-icon">◎</span><div><h3>Engineering focus</h3><p>Semantic search · Information retrieval · Data preprocessing · Vector databases · Tool security</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap education-grid"><div><p class="eyebrow">04 / EDUCATION</p><h2>Learning with<br><span class="muted-heading">intent.</span></h2></div><div class="education-content"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2023 — 2027</div><h3>B.E. Artificial Intelligence & Data Science</h3><p class="institution">Ajeenkya DY Patil University <span>· Pune, India</span></p><p>Class XII: 93%</p></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">JAN — FEB 2026</div><h3>Machine Learning Basics Using Scikit-learn</h3><p>Self-learning · Supervised learning, regression, classification, KNN, Logistic Regression, Random Forest, and evaluation metrics.</p></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">JAN — FEB 2026</div><h3>Python for Data Science</h3><p>Self-learning · NumPy, Pandas, Matplotlib, data cleaning, preprocessing, and exploratory data analysis.</p></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="wrap contact-inner"><p class="eyebrow">05 / NEXT STEP</p><h2>Have a problem worth<br>building for<span class="accent">?</span></h2><p>I'm interested in AI/ML and backend internships where I can learn fast, contribute thoughtfully, and build real systems.</p><div class="contact-actions"><a class="button button-primary" href="mailto:singh006ajay@gmail.com?subject=Internship%20Opportunity%20-%20Ajay%20Singh">Email me <span>↗</span></a><a class="button button-ghost" href="https://github.com/Ajay-Singh89" target="_blank" rel="noopener">GitHub profile <span>↗</span></a><button class="button button-ghost" id="copyEmail">Copy email <span>⧉</span></button></div><p class="copy-feedback" id="copyFeedback" aria-live="polite"></p><div class="contact-details"><span>PUNE, INDIA</span><a href="mailto:singh006ajay@gmail.com">SINGH006AJAY@GMAIL.COM</a><a href="tel:+919336704275">+91 93367 04275</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">AS</span><span>AJAY SINGH<span class="brand-dot">.</span></span></a><span>Designed to be clear. Built to keep learning.</span><a href="#home" class="back-top">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> AJAY SINGH</span></div></footer>
+</body>
+</html>
