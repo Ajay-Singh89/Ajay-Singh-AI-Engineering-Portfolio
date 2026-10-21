@@ -1,6 +1,6 @@
 # Ajay Singh — Portfolio
 
-A responsive, static portfolio website based on the uploaded résumé.
+A responsive, static portfolio website 
 
 ## Preview locally
 Open `index.html` in a browser, or serve the folder:
